@@ -1,4 +1,4 @@
-import { DIJKSTRA } from '../src/init';
+const { DIJKSTRA } = require("../dist")
 
 describe("DIJKSTRA Proj Init", () => {
   describe("DIJKSTRA", () => {
