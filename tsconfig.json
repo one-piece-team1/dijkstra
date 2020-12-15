@@ -6,8 +6,10 @@
         "strictPropertyInitialization": false,
         "sourceMap": false,
         "outDir": "./dist",
+        "baseUrl": "./src",
         "declaration": true,
         "experimentalDecorators": true,
+        "allowJs": true,
         "lib": ["es2017", "ES2017.Object"]
     },
     "exclude": ["node_modules", ".env", ".env.example", "ws.json", "scripts", "docs", "test"]

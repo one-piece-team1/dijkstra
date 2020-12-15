@@ -1,4 +1,4 @@
-import { DIJKSTRA } from '../src/init';
+import { DIJKSTRA } from '../dist';
 
 describe("DIJKSTRA Proj Init", () => {
   describe("DIJKSTRA", () => {
