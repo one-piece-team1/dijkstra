@@ -27,7 +27,7 @@ jobs:
           at: .
       - run:
           name: Test
-          command: sudo npm test
+          command: sudo npm run build && sudo npm test
 
 workflows:
   version: 2
