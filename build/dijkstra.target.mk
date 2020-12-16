@@ -7,13 +7,9 @@ DEFS_Debug := \
 	'-DUSING_UV_SHARED=1' \
 	'-DUSING_V8_SHARED=1' \
 	'-DV8_DEPRECATION_WARNINGS=1' \
-	'-DV8_DEPRECATION_WARNINGS' \
-	'-DV8_IMMINENT_DEPRECATION_WARNINGS' \
 	'-D_DARWIN_USE_64_BIT_INODE=1' \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
-	'-DOPENSSL_NO_PINSHARED' \
-	'-DOPENSSL_THREADS' \
 	'-DBUILDING_NODE_EXTENSION' \
 	'-DDEBUG' \
 	'-D_DEBUG' \
@@ -33,7 +29,7 @@ CFLAGS_Debug := \
 # Flags passed to only C files.
 CFLAGS_C_Debug := \
 	-fno-strict-aliasing \
-	-std=c++11 \
+	-std=c++17 \
 	-stdlib=libc++
 
 # Flags passed to only C++ files.
@@ -42,7 +38,7 @@ CFLAGS_CC_Debug := \
 	-stdlib=libc++ \
 	-fno-rtti \
 	-fno-strict-aliasing \
-	-std=c++11 \
+	-std=c++17 \
 	-stdlib=libc++
 
 # Flags passed to only ObjC files.
@@ -52,13 +48,13 @@ CFLAGS_OBJC_Debug :=
 CFLAGS_OBJCC_Debug :=
 
 INCS_Debug := \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/include/node \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/src \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/deps/openssl/config \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/deps/openssl/openssl/include \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/deps/uv/include \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/deps/zlib \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/deps/v8/include \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/include/node \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/src \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/deps/openssl/config \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/deps/openssl/openssl/include \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/deps/uv/include \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/deps/zlib \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/deps/v8/include \
 	-I$(srcdir)/addons \
 	-I/Users/liyuncheng/git_proj/one-piece/dijkstra/node_modules/node-addon-api
 
@@ -67,18 +63,14 @@ DEFS_Release := \
 	'-DUSING_UV_SHARED=1' \
 	'-DUSING_V8_SHARED=1' \
 	'-DV8_DEPRECATION_WARNINGS=1' \
-	'-DV8_DEPRECATION_WARNINGS' \
-	'-DV8_IMMINENT_DEPRECATION_WARNINGS' \
 	'-D_DARWIN_USE_64_BIT_INODE=1' \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
-	'-DOPENSSL_NO_PINSHARED' \
-	'-DOPENSSL_THREADS' \
 	'-DBUILDING_NODE_EXTENSION'
 
 # Flags passed to all source files.
 CFLAGS_Release := \
-	-O3 \
+	-Os \
 	-gdwarf-2 \
 	-mmacosx-version-min=10.9 \
 	-arch x86_64 \
@@ -90,7 +82,7 @@ CFLAGS_Release := \
 # Flags passed to only C files.
 CFLAGS_C_Release := \
 	-fno-strict-aliasing \
-	-std=c++11 \
+	-std=c++17 \
 	-stdlib=libc++
 
 # Flags passed to only C++ files.
@@ -99,7 +91,7 @@ CFLAGS_CC_Release := \
 	-stdlib=libc++ \
 	-fno-rtti \
 	-fno-strict-aliasing \
-	-std=c++11 \
+	-std=c++17 \
 	-stdlib=libc++
 
 # Flags passed to only ObjC files.
@@ -109,13 +101,13 @@ CFLAGS_OBJC_Release :=
 CFLAGS_OBJCC_Release :=
 
 INCS_Release := \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/include/node \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/src \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/deps/openssl/config \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/deps/openssl/openssl/include \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/deps/uv/include \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/deps/zlib \
-	-I/Users/liyuncheng/Library/Caches/node-gyp/12.19.0/deps/v8/include \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/include/node \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/src \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/deps/openssl/config \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/deps/openssl/openssl/include \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/deps/uv/include \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/deps/zlib \
+	-I/Users/liyuncheng/.node-gyp/10.15.0/deps/v8/include \
 	-I$(srcdir)/addons \
 	-I/Users/liyuncheng/git_proj/one-piece/dijkstra/node_modules/node-addon-api
 

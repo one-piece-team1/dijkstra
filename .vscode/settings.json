@@ -56,7 +56,11 @@
     "stop_token": "cpp",
     "streambuf": "cpp",
     "thread": "cpp",
-    "typeinfo": "cpp"
+    "typeinfo": "cpp",
+    "any": "cpp",
+    "map": "cpp",
+    "set": "cpp",
+    "unordered_set": "cpp"
   },
   "C_Cpp.dimInactiveRegions": false,
   "C_Cpp.errorSquiggles": "Disabled"

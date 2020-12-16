@@ -1,6 +1,7 @@
 #include <napi.h>
 #include <string>
 #include "greeting.h"
+#include "dijkstra.hpp"
 
 Napi::String greet(const Napi::CallbackInfo& info) {
   Napi::Env env = info.Env();
