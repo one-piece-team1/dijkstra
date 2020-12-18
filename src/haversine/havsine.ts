@@ -28,7 +28,7 @@ class Haversine {
    * @param {boolean} isMiles default is miles, otherwise use kilometer
    * @returns {number}
    */
-  distance(coordStart: number[], coordEnd: number[], isKilometer: boolean = false) {
+  distance(coordStart: number[], coordEnd: number[], isKilometer = false) {
     const lat1 = coordStart[0];
     const lat2 = coordEnd[0];
     // Calcualte angle by the latitude
@@ -57,7 +57,7 @@ export class HaversineFactory {
    * @param {boolean} isMiles default is miles, otherwise use kilometer
    * @returns {number}
    */
-  static calc(coordStart: number[], coordEnd: number[], isKilometer: boolean = false) {
+  static calc(coordStart: number[], coordEnd: number[], isKilometer = false) {
     return new Haversine().distance(coordStart, coordEnd, isKilometer);
   }
 }
