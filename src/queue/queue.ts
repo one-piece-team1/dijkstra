@@ -9,7 +9,7 @@
  * Copyright (c) 2018, royhobbstn https://github.com/royhobbstn/geojson-dijkstra/blob/master/LICENSE
  *
  **/
-import { InstanceInitError } from "../error"
+import { InstanceInitError } from '../error';
 
 interface ISearchState {
   heapIndex: number;
@@ -25,7 +25,7 @@ export class NodeHeap {
 
   constructor(options) {
     options = options || {};
-    if (!options.compare) throw new InstanceInitError("NodeHeap", 'Please supply a comparison function to NodeHeap');
+    if (!options.compare) throw new InstanceInitError('NodeHeap', 'Please supply a comparison function to NodeHeap');
 
     this.data = [];
     this.length = this.data.length;
