@@ -48,3 +48,7 @@ test.js
 # Environment
 *.env
 *.*.env
+
+# build file
+dist/
+build/
