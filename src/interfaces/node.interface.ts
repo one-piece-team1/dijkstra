@@ -8,7 +8,7 @@ export interface IChild {
   dist: number;
   prev: any;
   visited: any;
-  opened: Boolean;
+  opened: boolean;
   heapIndex: number;
   score: number;
   heuristic: number;

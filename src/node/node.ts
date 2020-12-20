@@ -1,11 +1,11 @@
 import { INode } from '../interfaces';
 
 class Node implements INode.IChild {
-  public id: string = '';
+  public id = '';
   public dist: number;
   public prev: any;
   public visited: any;
-  public opened: Boolean;
+  public opened: boolean;
   public heapIndex: number;
   public score: number;
   public heuristic: any;
