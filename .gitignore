@@ -52,3 +52,6 @@ test.js
 # build file
 dist/
 build/
+
+# datasets
+datasets/
